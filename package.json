@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "dev:atlas": "node scripts/dev-atlas.mjs",
+    "seed:admin": "node scripts/create-admin.mjs",
+    "test:auth": "node scripts/test-auth.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint src next.config.ts postcss.config.mjs eslint.config.mjs",

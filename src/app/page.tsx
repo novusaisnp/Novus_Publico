@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { AccessForm } from "./access-form";
 import styles from "./page.module.css";
 
 const modules = [
@@ -11,14 +12,6 @@ function CheckIcon() {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24">
       <path d="m5 12 4.2 4.2L19.5 6" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.2" />
-    </svg>
-  );
-}
-
-function ArrowIcon() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24">
-      <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
     </svg>
   );
 }
@@ -58,17 +51,7 @@ export default function Home() {
             <p>Use as credenciais institucionais para continuar.</p>
           </div>
 
-          <form className={styles.form}>
-            <label htmlFor="email">E-mail institucional<input autoComplete="email" id="email" name="email" placeholder="voce@orgao.gov.br" type="email" /></label>
-            <label htmlFor="password">Senha<input autoComplete="current-password" id="password" name="password" placeholder="Digite sua senha" type="password" /></label>
-
-            <div className={styles.formOptions}>
-              <label className={styles.checkbox} htmlFor="remember"><input id="remember" name="remember" type="checkbox" /><span>Lembrar acesso</span></label>
-              <span className={styles.comingSoon}>Recuperação em breve</span>
-            </div>
-
-            <button className={styles.primaryButton} disabled type="button">Autenticação em preparação <ArrowIcon /></button>
-          </form>
+          <AccessForm />
 
           <div className={styles.notice}>
             <span className={styles.noticeIcon} aria-hidden="true">✓</span>
