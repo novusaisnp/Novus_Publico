@@ -1,0 +1,21 @@
+# dependencies
+/node_modules
+
+# Next.js
+/.next
+/out
+
+# local environment and credentials
+.env*
+!/.env.example
+atlas-credentials.env
+
+# generated artifacts
+/output
+/.pptx-build
+/.codex-finalizer
+
+# local files
+*.log
+.DS_Store
+*.tsbuildinfo
