@@ -50,7 +50,7 @@ Não significa que TypeScript deve ser uma regra eterna: componentes de alto vol
 | Web administrativo e portal | Next.js + React + TypeScript | Aplicação responsiva, SSR onde útil e acessibilidade |
 | API | NestJS + TypeScript | API modular, autenticação, RBAC, jobs e documentação OpenAPI |
 | Mobile | React Native + Expo + TypeScript | Android/iOS; foco inicial em Android e uso offline de campo |
-| Banco transacional | PostgreSQL | Dados relacionais, JSONB, busca, extensão PostGIS e isolamento por município |
+| Banco principal | MongoDB Atlas | Documentos por domínio, dados flexíveis e isolamento por município |
 | Arquivos | Armazenamento S3 compatível | Documentos, fotos, versões e política de retenção |
 | Cache/fila | Redis + fila de jobs | Sessões, limites, notificações, OCR e integrações assíncronas |
 | Busca documental | PostgreSQL FTS inicialmente; OpenSearch quando a escala justificar | Busca por metadados e texto extraído por OCR |
